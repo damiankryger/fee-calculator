@@ -1,6 +1,31 @@
 PragmaGO.TECH Interview Test - Fee Calculation
 =====
 
+## Launching the application
+
+This application has been created and provided with the environment using docker and docker compose. To be able to use this application, please ensure that you have installed Docker with version 2 (you need to be able to execute `docker compose` command).
+
+Firstly you need to build docker image. To do that, please execute this command:
+
+```bash
+docker compose build --no-cache
+```
+
+It will build the docker image. During build there all tests, phpstan and php-cs-fixer will be executed. When the build process will finish without any error, it means, that code works perfectly.
+
+After that you can test the application using command mentioned below:
+
+```bash
+docker compose run php php index.php <term> <amount>
+```
+
+Replace `<term>` with value 12 or 24 and `<amount>` with the value between 1000 and 20000. You should expect this kind of result in you console:
+
+```bash
+Calculated fee for term 12 and amount 1500 is: 70.
+```
+
+
 ## Background
 
 This test is designed to evaluate your problem solving approach and your engineering ability. Design your solution in a way that shows your knowledge of OOP concepts, SOLID principles, design patterns, clean and extensible architecture.

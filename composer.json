@@ -5,11 +5,29 @@
         {
             "name": "Piotr Ścibor",
             "email": "piotr.scibor@pragmago.tech"
+        },
+        {
+            "name": "Damian Kryger",
+            "email": "damiankryger@gmail.com"
         }
     ],
     "autoload": {
         "psr-4": {
             "PragmaGoTech\\Interview\\": "src/"
         }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "PragmaGoTech\\Interview\\Tests\\": "tests/"
+        }
+    },
+    "require": {
+        "php": "^8.3",
+        "webmozart/assert": "^1.11"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "*",
+        "phpstan/phpstan": "^1.12",
+        "friendsofphp/php-cs-fixer": "*"
     }
 }
